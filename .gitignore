@@ -1,0 +1,11 @@
+# .NET
+bin/
+obj/
+*.user
+
+# Frontend
+node_modules/
+Frontend/transaction-client/dist/
+
+# Environment
+.env.local

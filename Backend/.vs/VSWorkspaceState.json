@@ -1,0 +1,9 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\TransactionSimulator.Infrastructure",
+    "\\TransactionSimulator.Infrastructure\\Services"
+  ],
+  "SelectedNode": "\\TransactionSimulator.Infrastructure\\Services\\DateTimeService.cs",
+  "PreviewInSolutionExplorer": false
+}

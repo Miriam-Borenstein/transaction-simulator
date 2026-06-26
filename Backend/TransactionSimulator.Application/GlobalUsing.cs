@@ -1,0 +1,9 @@
+﻿global using Mapster;
+global using FluentValidation;
+global using FluentValidation.AspNetCore;
+global using Microsoft.Extensions.DependencyInjection;
+global using TransactionSimulator.Application.Transactions.Interfaces;
+global using TransactionSimulator.Application.Transactions.Services;
+global using TransactionSimulator.Application.Transactions.Validators;
+global using TransactionSimulator.Application.Transactions.Models.Domain;
+global using TransactionSimulator.Application.Transactions.Models.DTOs;

@@ -1,0 +1,31 @@
+version: "3.9"
+
+services:
+
+  server:
+    build:
+      context: ./Backend
+      dockerfile: TransactionSimulator.API/Dockerfile
+    ports:
+      - "5000:8080"
+    depends_on:
+      - db
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=db;Database=TransactionsDb;User Id=sa;Password=Your_password123;TrustServerCertificate=True;
+
+  client:
+    build:
+      context: ./Frontend/transaction-client
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - server
+
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=Your_password123
+    ports:
+      - "1433:1433"

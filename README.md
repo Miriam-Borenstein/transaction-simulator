@@ -19,9 +19,9 @@ The backend converts the submitted UTC time to the region's local time and appli
 
 All transactions are persisted to the database. Only approved transactions are displayed in the UI.
 
-## Running with Docker (Recommended)
+## Running with Docker
 
-> Requires [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+> Requires Docker Desktop
 
 ```bash
 git clone <repo-url>

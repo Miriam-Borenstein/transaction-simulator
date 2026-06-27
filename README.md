@@ -25,7 +25,7 @@ All transactions are persisted to the database. Only approved transactions are d
 
 ```bash
 git clone https://github.com/Miriam-Borenstein/transaction-simulator.git
-cd Shva
+cd transaction-simulator
 docker-compose up --build
 ```
 
